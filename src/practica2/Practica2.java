@@ -15,11 +15,11 @@ public class Practica2 {
         int n_articulos;
         double subtotal = 0, total, descuento = 0, valor_p;
 
-        System.out.println("Ingrese el numero de articulos que desea comprar: ");
+        System.out.print("Ingrese el numero de articulos que desea comprar: ");
         n_articulos = sc.nextInt();
 
         for (int i = 0; i < n_articulos; i++) {
-            System.out.println("Ingrese el precio del producto " + (i + 1) + ":");
+            System.out.print("Ingrese el precio del producto " + (i + 1) + ":");
             valor_p = sc.nextDouble();
             subtotal = subtotal + valor_p;
         }
@@ -35,9 +35,10 @@ public class Practica2 {
         }
 
         total = subtotal - descuento;
-
-        System.out.println("El total a pagar es: " + total);
-
+        System.out.println("Sin descuento: " + subtotal);
+        System.out.println("El descuento es de: " + descuento);
+        System.out.print("El total a pagar es: " + total);
+        
         sc.close();
     }
 }
